@@ -7,6 +7,6 @@ public class CameraManager : MonoBehaviour
     public Transform players;
     void Update()
     {
-        transform.position = new Vector3(transform.position.x, players.GetChild(0).localPosition.y + players.GetChild(1).localPosition.y, transform.position.z);
+        transform.position = new Vector3(transform.position.x, (players.GetChild(0).localPosition.y + players.GetChild(1).localPosition.y)/2, transform.position.z);
     }
 }
